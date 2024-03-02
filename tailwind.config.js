@@ -1,20 +1,35 @@
 /** @type {import('tailwindcss').Config} */
 
 import plugin from "tailwindcss/plugin"
-import daisyui from "daisyui"
 
 export default {
+	darkMode: ["class"],
 	content: [
 		"./index.html",
 		"./src/**/*.{js,ts,jsx,tsx}",
+		'./pages/**/*.{js,jsx}',
+		'./components/**/*.{js,jsx}',
+		'./app/**/*.{js,jsx}',
 	],
 	theme: {
+		container: {
+			center: true,
+			padding: "2rem",
+			screens: {
+				"2xl": "1400px",
+			},
+		},
 		extend: {
 			fontFamily: {
 				'roboto': ['Roboto', 'sans-serif'],
 			},
 			colors: {
-				darkOrange: "#FBA72E",
+				primary: 'rgba(143,149,98,0.85)',
+				primaryLight: 'rgba(143,149,98,1)',
+				secondary: 'rgba(244,221,184,0.66)',
+
+				darkSlate: "#757575",
+				lightWhite: "#F5F5F5F2",	
 			},
 			spacing: {
 				25: "6.25rem",
@@ -41,6 +56,10 @@ export default {
 			height: {
 				103: "32.5rem"
 			},
+			lineHeight: {
+				'extra-loose': '2.5',
+				'12': '3rem',
+			},
 			textShadow: {
 				sm: '0 1px 2px var(--tw-shadow-color)',
 				DEFAULT: '0px 4px 4px var(--tw-shadow-color)',
@@ -60,6 +79,5 @@ export default {
 				{ values: theme('textShadow') }
 			)
 		}),
-		daisyui,
 	],
 }
