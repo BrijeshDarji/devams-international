@@ -12,3 +12,16 @@
 .border__image {
     background: linear-gradient(#0001, #000);
 }
+.whole__spices {
+    background-size: cover;
+    background-position: center center;
+    background-image: url("./assets/images/WholeSpicesThumbnail.jpg");
+    background-repeat: no-repeat;
+}
+
+.spices__powder {
+    background-size: cover;
+    background-position: center center;
+    background-image: url("./assets/images/SpicesPowderThumbnail.jpg");
+    background-repeat: no-repeat;
+}
