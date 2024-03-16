@@ -1,5 +1,5 @@
-import ErrorBoundary from "./components/ErrorBoundary.jsx"
-import Routing from "./routes/Routing.jsx"
+import ErrorBoundary from "@/src/components/pages/ErrorBoundary.jsx"
+import Routing from "./routes/Routing"
 
 import './App.css'
 
