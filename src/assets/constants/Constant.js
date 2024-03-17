@@ -15,7 +15,7 @@ import UdyogAadhaar from "../images/udyogaadhaar.png"
 
 export const NAV_MENU = [
     "Home",
-    "Product",
+    "Products",
     "About Us",
     "Brochure",
     "Contact Us",
