@@ -5,13 +5,15 @@
 import ExportShipImage from "../images/ExportShip.jpg"
 import WholeSpicesImage from "../images/WholeSpices.jpg"
 import SpicesPowerImage from "../images/SpicesPower.jpg"
-import FSSAI from "../images/fssai.jpg"
-import GSTC from "../images/gstc.jpg"
-import MSME from "../images/msme.png"
-import FIEO from "../images/fieo.jpg"
-import IEC from "../images/iec.png"
-import SpicesBoard from "../images/spicesboard.png"
-import UdyogAadhaar from "../images/udyogaadhaar.png"
+
+// Certificate images
+import FSSAI from "@/src/assets/images/certificates/fssai.jpg"
+import GSTC from "@/src/assets/images/certificates/gstc.jpg"
+import MSME from "@/src/assets/images/certificates/msme.png"
+import FIEO from "@/src/assets/images/certificates/fieo.jpg"
+import IEC from "@/src/assets/images/certificates/iec.png"
+import SpicesBoard from "@/src/assets/images/certificates/spices-board.png"
+import UdyogAadhaar from "@/src/assets/images/certificates/udyoga-adhaar.png"
 
 export const NAV_MENU = [
     "Home",
