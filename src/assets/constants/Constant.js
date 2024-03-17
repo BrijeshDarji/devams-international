@@ -8,6 +8,10 @@ import SpicesPowerImage from "../images/SpicesPower.jpg"
 import FSSAI from "../images/fssai.jpg"
 import GSTC from "../images/gstc.jpg"
 import MSME from "../images/msme.png"
+import FIEO from "../images/fieo.jpg"
+import IEC from "../images/iec.png"
+import SpicesBoard from "../images/spicesboard.png"
+import UdyogAadhaar from "../images/udyogaadhaar.png"
 
 export const NAV_MENU = [
     "Home",
@@ -56,6 +60,22 @@ export const CERTIFICATES = [
     {
         src: MSME,
         alt: "MSME Certificate",
+    },
+    {
+        src: FIEO,
+        alt: "FIEO Certificate",
+    },
+    {
+        src: IEC,
+        alt: "IEC Certificate",
+    },
+    {
+        src: SpicesBoard,
+        alt: "SpicesBoard Certificate",
+    },
+    {
+        src: UdyogAadhaar,
+        alt: "UdyogAadhaar Certificate",
     },
 ]
 
