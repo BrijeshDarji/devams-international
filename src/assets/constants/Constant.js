@@ -68,11 +68,11 @@ export const footerSectionLiCss = "flex gap-3"
 
 export const sectionSpacing = "w-full       gap-10 lg:gap-20      px-14 lg:px-20 py-16 "
 export const sectionCss = "flex flex-col justify-center items-center " + sectionSpacing
-export const sectionHeaderCss = "font-semibold       text-2xl md:text-4xl "
+export const sectionHeaderCss = "font-semibold       text-2xl md:text-3xl lg:text-4xl "
 
 
 // Contact details
 export const EMAIL = "devamsinternational@gmail.com"
 export const PHONE_NUMBER = "6353595838"
 export const TIME = "Mon - Sun: 9AM to 9PM"
-export const LOCATION = "Gandhinagar, Gujarat, India"
+export const LOCATION = "Dehgam - 382305, Gandhinagar, Gujarat, India"

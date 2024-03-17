@@ -63,6 +63,7 @@ function ContactForm() {
     return (
         <div className={clsx(sectionCss)}>
             <p className={clsx(sectionHeaderCss)}>
+                {/* Get in touch with us */}
                 Let's get connect
             </p>
 

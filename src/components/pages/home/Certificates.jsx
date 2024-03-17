@@ -40,12 +40,12 @@ function Certificates() {
                 onMouseLeave={plugin.current.reset}
                 className="max-w-40 md:max-w-72 lg:max-w-96"
             >
-                <CarouselContent className="-ml-1">
+                <CarouselContent className="-ml-2 md:-ml-4">
                     {
                         CERTIFICATES.map((imageInfo, index) => (
                             <CarouselItem
                                 key={index}
-                                className="md:basis-1/2 lg:basis-1/3"
+                                className="pl-2 md:pl-4 md:basis-1/3"
                             >
                                 <img
                                     src={imageInfo.src}

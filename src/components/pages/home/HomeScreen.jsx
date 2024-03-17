@@ -72,7 +72,7 @@ function HomeScreen() {
                                     />
 
                                     <div className="absolute w-3/4 p-6 border__image text-shadow shadow-[#00000040] text-white rounded-lg flex flex-col items-start leading-relaxed gap-6      left-6 md:left-12 lg:left-25        bottom-6 md:bottom-12 ">
-                                        <div className="font-semibold       text-2xl md:text-4xl lg:text-5xl">
+                                        <div className="font-semibold       text-2xl md:text-3xl lg:text-5xl">
                                             {imageInfo.text.header}
                                         </div>
 
