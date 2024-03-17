@@ -8,6 +8,7 @@ import { Routes, Route, BrowserRouter } from "react-router-dom"
 
 import LoadingFallback from "./LoadingFallback.jsx"
 import HomeScreen from "../components/pages/home/HomeScreen.jsx"
+import Container from "../components/containers/Container.jsx"
 
 import { RouteList } from "./RouteList.js"
 
@@ -26,7 +27,11 @@ function Routing() {
                                     key={index}
                                     path={route.path}
                                     exact={route.exact}
-                                    element={<Component {...route} />}
+                                    element={
+                                        <Container>
+                                            <Component {...route} />
+                                        </Container>
+                                    }
                                 />
                             )
                         })

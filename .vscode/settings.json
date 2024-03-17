@@ -3,6 +3,7 @@
         "LoadingFallback",
         "homeScreen",
         "certificates",
-        "navbar"
+        "navbar",
+        "routing"
     ]
 }
