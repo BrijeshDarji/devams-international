@@ -2,6 +2,7 @@
     "conventionalCommits.scopes": [
         "LoadingFallback",
         "homeScreen",
-        "certificates"
+        "certificates",
+        "navbar"
     ]
 }

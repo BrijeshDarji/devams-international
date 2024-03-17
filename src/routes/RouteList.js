@@ -2,16 +2,18 @@
  *  @description This file contains system's route list. 
  */
 
-import HomeScreen from "../components/pages/home/HomeScreen";
+import { lazy } from "react";
 
 import {
-    URL_HOME_SCREEN,
+    URL_PRODUCT_LIST,
 } from "../assets/constants/SitePath";
 
+const ProductList = lazy(() => import("../components/pages/products/ProductList.jsx" /* webpackChunkName: 'ProductList'*/))
+
 export const RouteList = [
-    /* {
-        path: URL_HOME_SCREEN,
+    {
+        path: URL_PRODUCT_LIST,
         exact: true,
-        component: HomeScreen,
-    }, */
+        component: ProductList,
+    },
 ]

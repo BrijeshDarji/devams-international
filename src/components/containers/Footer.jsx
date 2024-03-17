@@ -1,5 +1,5 @@
 import { memo } from "react"
-import { NavLink } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import { clsx } from "clsx"
 
 import {
@@ -30,6 +30,11 @@ import {
 
 import { formatIndianPhoneNumber } from "../../lib/utils"
 
+import {
+    URL_HOME_SCREEN,
+    URL_PRODUCT_LIST,
+} from "@/src/assets/constants/SitePath"
+
 const SOCIAL_MEDIA_LINKS = [
     {
         icon: Facebook,
@@ -43,6 +48,36 @@ const SOCIAL_MEDIA_LINKS = [
 ]
 
 function Footer() {
+    const navigate = useNavigate()
+
+    const NAV_MENU = [
+        {
+            title: "Home",
+            action: () => navigate(URL_HOME_SCREEN),
+            disabled: false
+        },
+        {
+            title: "Products",
+            action: () => navigate(URL_PRODUCT_LIST),
+            disabled: false
+        },
+        {
+            title: "About Us",
+            action: () => { },
+            disabled: false
+        },
+        {
+            title: "Brochure",
+            action: () => { },
+            disabled: false
+        },
+        {
+            title: "Contact Us",
+            action: () => { },
+            disabled: false
+        },
+    ]
+
     return (
         <div className={clsx(sectionSpacing, "flex flex-col md:flex-row justify-around bg-primary text-white")}>
             <div>
@@ -52,14 +87,14 @@ function Footer() {
 
                 <div>
                     <ul className={clsx(footerSectionUlCss)}>
-                        {NAV_MENU.map(menu => (
-                            <NavLink
-                                to={"/"}
-                                key={menu}
-                                className="hover:underline"
+                        {NAV_MENU.map((menu, index) => (
+                            <span
+                                key={index + menu.title}
+                                className="hover:underline cursor-pointer"
+                                onClick={menu.action}
                             >
-                                {menu}
-                            </NavLink>
+                                {menu.title}
+                            </span>
                         ))}
                     </ul>
                 </div>
